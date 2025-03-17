@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <!-- Teclas Blancas (LinearLayout horizontal) -->
+        <LinearLayout
+            android:id="@+id/white_keys"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <!-- Octava 3 -->
+            <View
+                android:id="@+id/key_c3"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/white_key"
+                android:tag="c3" />
+
+            <View
+                android:id="@+id/key_d3"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/white_key"
+                android:tag="d3" />
+
+            <View
+                android:id="@+id/key_e3"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/white_key"
+                android:tag="e3" />
+
+            <View
+                android:id="@+id/key_f3"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/white_key"
+                android:tag="f3" />
+
+            <View
+                android:id="@+id/key_g3"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/white_key"
+                android:tag="g3" />
+
+            <View
+                android:id="@+id/key_a3"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/white_key"
+                android:tag="a3" />
+
+            <View
+                android:id="@+id/key_b3"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/white_key"
+                android:tag="b3" />
+
+            <!-- Octava 4 -->
+            <View
+                android:id="@+id/key_c4"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/white_key"
+                android:tag="c4" />
+
+            <View
+                android:id="@+id/key_d4"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/white_key"
+                android:tag="d4" />
+
+            <View
+                android:id="@+id/key_e4"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/white_key"
+                android:tag="e4" />
+
+            <View
+                android:id="@+id/key_f4"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/white_key"
+                android:tag="f4" />
+
+            <View
+                android:id="@+id/key_g4"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/white_key"
+                android:tag="g4" />
+
+            <View
+                android:id="@+id/key_a4"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/white_key"
+                android:tag="a4" />
+
+            <View
+                android:id="@+id/key_b4"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/white_key"
+                android:tag="b4" />
+
+            <!-- Octava 5 -->
+            <View
+                android:id="@+id/key_c5"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/white_key"
+                android:tag="c5" />
+
+            <View
+                android:id="@+id/key_d5"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/white_key"
+                android:tag="d5" />
+
+            <View
+                android:id="@+id/key_e5"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/white_key"
+                android:tag="e5" />
+
+        </LinearLayout>
+
+        <!-- Teclas Negras (RelativeLayout para posicionamiento absoluto) -->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"
+            android:layout_alignTop="@id/white_keys">
+
+            <!-- Octava 3 -->
+            <View
+                android:id="@+id/key_c_sharp3"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="40dp"
+                android:background="@drawable/black_key"
+                android:tag="c_sharp3" />
+
+            <View
+                android:id="@+id/key_d_sharp3"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="160dp"
+                android:background="@drawable/black_key"
+                android:tag="d_sharp3" />
+
+            <View
+                android:id="@+id/key_f_sharp3"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="340dp"
+                android:background="@drawable/black_key"
+                android:tag="f_sharp3" />
+
+            <View
+                android:id="@+id/key_g_sharp3"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="400dp"
+                android:background="@drawable/black_key"
+                android:tag="g_sharp3" />
+
+            <View
+                android:id="@+id/key_a_sharp3"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="460dp"
+                android:background="@drawable/black_key"
+                android:tag="a_sharp3" />
+
+            <!-- Octava 4 -->
+            <View
+                android:id="@+id/key_c_sharp4"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="580dp"
+                android:background="@drawable/black_key"
+                android:tag="c_sharp4" />
+
+            <View
+                android:id="@+id/key_d_sharp4"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="700dp"
+                android:background="@drawable/black_key"
+                android:tag="d_sharp4" />
+
+            <View
+                android:id="@+id/key_f_sharp4"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="880dp"
+                android:background="@drawable/black_key"
+                android:tag="f_sharp4" />
+
+            <View
+                android:id="@+id/key_g_sharp4"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="940dp"
+                android:background="@drawable/black_key"
+                android:tag="g_sharp4" />
+
+            <View
+                android:id="@+id/key_a_sharp4"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="1000dp"
+                android:background="@drawable/black_key"
+                android:tag="a_sharp4" />
+
+            <!-- Octava 5 -->
+            <View
+                android:id="@+id/key_c_sharp5"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="1120dp"
+                android:background="@drawable/black_key"
+                android:tag="c_sharp5" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+</HorizontalScrollView>

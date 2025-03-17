@@ -1,0 +1,6 @@
+<resources>
+    <dimen name="white_key_width">60dp</dimen>
+    <dimen name="black_key_width">40dp</dimen>
+    <dimen name="black_key_height">280dp</dimen>
+    <dimen name="black_key_margin">-20dp</dimen>
+</resources>
