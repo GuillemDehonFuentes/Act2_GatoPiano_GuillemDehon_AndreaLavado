@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<HorizontalScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:contentDescription="@string/app_name"
     android:fillViewport="true">
 
     <RelativeLayout
@@ -22,49 +22,49 @@
                 android:layout_width="60dp"
                 android:layout_height="match_parent"
                 android:background="@drawable/white_key"
-                android:tag="c3" />
+                android:tag="miau_c_1" />
 
             <View
                 android:id="@+id/key_d3"
                 android:layout_width="60dp"
                 android:layout_height="match_parent"
                 android:background="@drawable/white_key"
-                android:tag="d3" />
+                android:tag="miau_d_1" />
 
             <View
                 android:id="@+id/key_e3"
                 android:layout_width="60dp"
                 android:layout_height="match_parent"
                 android:background="@drawable/white_key"
-                android:tag="e3" />
+                android:tag="miau_e_1" />
 
             <View
                 android:id="@+id/key_f3"
                 android:layout_width="60dp"
                 android:layout_height="match_parent"
                 android:background="@drawable/white_key"
-                android:tag="f3" />
+                android:tag="miau_f_1" />
 
             <View
                 android:id="@+id/key_g3"
                 android:layout_width="60dp"
                 android:layout_height="match_parent"
                 android:background="@drawable/white_key"
-                android:tag="g3" />
+                android:tag="miau_g_1" />
 
             <View
                 android:id="@+id/key_a3"
                 android:layout_width="60dp"
                 android:layout_height="match_parent"
                 android:background="@drawable/white_key"
-                android:tag="a3" />
+                android:tag="miau_a_1" />
 
             <View
                 android:id="@+id/key_b3"
                 android:layout_width="60dp"
                 android:layout_height="match_parent"
                 android:background="@drawable/white_key"
-                android:tag="b3" />
+                android:tag="miau_b_1" />
 
             <!-- Octava 4 -->
             <View
@@ -72,49 +72,49 @@
                 android:layout_width="60dp"
                 android:layout_height="match_parent"
                 android:background="@drawable/white_key"
-                android:tag="c4" />
+                android:tag="miau_c_2" />
 
             <View
                 android:id="@+id/key_d4"
                 android:layout_width="60dp"
                 android:layout_height="match_parent"
                 android:background="@drawable/white_key"
-                android:tag="d4" />
+                android:tag="miau_d_2" />
 
             <View
                 android:id="@+id/key_e4"
                 android:layout_width="60dp"
                 android:layout_height="match_parent"
                 android:background="@drawable/white_key"
-                android:tag="e4" />
+                android:tag="miau_e_2" />
 
             <View
                 android:id="@+id/key_f4"
                 android:layout_width="60dp"
                 android:layout_height="match_parent"
                 android:background="@drawable/white_key"
-                android:tag="f4" />
+                android:tag="miau_f_2" />
 
             <View
                 android:id="@+id/key_g4"
                 android:layout_width="60dp"
                 android:layout_height="match_parent"
                 android:background="@drawable/white_key"
-                android:tag="g4" />
+                android:tag="miau_g_2" />
 
             <View
                 android:id="@+id/key_a4"
                 android:layout_width="60dp"
                 android:layout_height="match_parent"
                 android:background="@drawable/white_key"
-                android:tag="a4" />
+                android:tag="miau_a_2" />
 
             <View
                 android:id="@+id/key_b4"
                 android:layout_width="60dp"
                 android:layout_height="match_parent"
                 android:background="@drawable/white_key"
-                android:tag="b4" />
+                android:tag="miau_b_2" />
 
             <!-- Octava 5 -->
             <View
@@ -122,21 +122,21 @@
                 android:layout_width="60dp"
                 android:layout_height="match_parent"
                 android:background="@drawable/white_key"
-                android:tag="c5" />
+                android:tag="miau_c_3" />
 
             <View
                 android:id="@+id/key_d5"
                 android:layout_width="60dp"
                 android:layout_height="match_parent"
                 android:background="@drawable/white_key"
-                android:tag="d5" />
+                android:tag="miau_d_3" />
 
             <View
                 android:id="@+id/key_e5"
                 android:layout_width="60dp"
                 android:layout_height="match_parent"
                 android:background="@drawable/white_key"
-                android:tag="e5" />
+                android:tag="miau_e_3" />
 
         </LinearLayout>
 
@@ -153,7 +153,7 @@
                 android:layout_height="match_parent"
                 android:layout_marginStart="40dp"
                 android:background="@drawable/black_key"
-                android:tag="c_sharp3" />
+                android:tag="miau_c_sharp_1" />
 
             <View
                 android:id="@+id/key_d_sharp3"
@@ -161,7 +161,7 @@
                 android:layout_height="match_parent"
                 android:layout_marginStart="160dp"
                 android:background="@drawable/black_key"
-                android:tag="d_sharp3" />
+                android:tag="miau_d_sharp_1" />
 
             <View
                 android:id="@+id/key_f_sharp3"
@@ -169,7 +169,7 @@
                 android:layout_height="match_parent"
                 android:layout_marginStart="340dp"
                 android:background="@drawable/black_key"
-                android:tag="f_sharp3" />
+                android:tag="miau_f_sharp_1" />
 
             <View
                 android:id="@+id/key_g_sharp3"
@@ -177,7 +177,7 @@
                 android:layout_height="match_parent"
                 android:layout_marginStart="400dp"
                 android:background="@drawable/black_key"
-                android:tag="g_sharp3" />
+                android:tag="miau_g_sharp_1" />
 
             <View
                 android:id="@+id/key_a_sharp3"
@@ -185,7 +185,7 @@
                 android:layout_height="match_parent"
                 android:layout_marginStart="460dp"
                 android:background="@drawable/black_key"
-                android:tag="a_sharp3" />
+                android:tag="miau_a_sharp_1" />
 
             <!-- Octava 4 -->
             <View
@@ -194,7 +194,7 @@
                 android:layout_height="match_parent"
                 android:layout_marginStart="580dp"
                 android:background="@drawable/black_key"
-                android:tag="c_sharp4" />
+                android:tag="miau_c_sharp_2" />
 
             <View
                 android:id="@+id/key_d_sharp4"
@@ -202,7 +202,7 @@
                 android:layout_height="match_parent"
                 android:layout_marginStart="700dp"
                 android:background="@drawable/black_key"
-                android:tag="d_sharp4" />
+                android:tag="miau_d_sharp_2" />
 
             <View
                 android:id="@+id/key_f_sharp4"
@@ -210,7 +210,7 @@
                 android:layout_height="match_parent"
                 android:layout_marginStart="880dp"
                 android:background="@drawable/black_key"
-                android:tag="f_sharp4" />
+                android:tag="miau_f_sharp_2" />
 
             <View
                 android:id="@+id/key_g_sharp4"
@@ -218,7 +218,7 @@
                 android:layout_height="match_parent"
                 android:layout_marginStart="940dp"
                 android:background="@drawable/black_key"
-                android:tag="g_sharp4" />
+                android:tag="miau_g_sharp_2" />
 
             <View
                 android:id="@+id/key_a_sharp4"
@@ -226,7 +226,7 @@
                 android:layout_height="match_parent"
                 android:layout_marginStart="1000dp"
                 android:background="@drawable/black_key"
-                android:tag="a_sharp4" />
+                android:tag="miau_a_sharp_2" />
 
             <!-- Octava 5 -->
             <View
@@ -235,7 +235,7 @@
                 android:layout_height="match_parent"
                 android:layout_marginStart="1120dp"
                 android:background="@drawable/black_key"
-                android:tag="c_sharp5" />
+                android:tag="miau_c_sharp_3" />
 
         </RelativeLayout>
     </RelativeLayout>
