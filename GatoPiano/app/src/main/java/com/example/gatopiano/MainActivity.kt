@@ -56,11 +56,11 @@ class MainActivity : AppCompatActivity() {
         val allKeys = listOf(
             R.id.key_c3, R.id.key_c_sharp3, R.id.key_d3, R.id.key_d_sharp3,
             R.id.key_e3, R.id.key_f3, R.id.key_f_sharp3, R.id.key_g3,
-            R.id.key_g_sharp3, R.id.key_a3, R.id.key_a_sharp3, R.id.key_b3,
+            R.id.key_g_sharp3, R.id.key_a3, R.id.key_a_sharp3,
             R.id.key_c4, R.id.key_c_sharp4, R.id.key_d4, R.id.key_d_sharp4,
-            R.id.key_e4, R.id.key_f4, R.id.key_f_sharp4, R.id.key_g4,
+            R.id.key_e4, R.id.key_f_sharp4, R.id.key_g4,
             R.id.key_g_sharp4, R.id.key_a4, R.id.key_a_sharp4, R.id.key_b4,
-            R.id.key_c5, R.id.key_d5, R.id.key_e5
+            R.id.key_c5, R.id.key_d5
         )
 
         allKeys.forEach { id ->
@@ -90,17 +90,14 @@ class MainActivity : AppCompatActivity() {
         R.id.key_f3,
         R.id.key_g3,
         R.id.key_a3,
-        R.id.key_b3,
         R.id.key_c4,
         R.id.key_d4,
         R.id.key_e4,
-        R.id.key_f4,
         R.id.key_g4,
         R.id.key_a4,
         R.id.key_b4,
         R.id.key_c5,
-        R.id.key_d5,
-        R.id.key_e5 -> getDrawable(R.drawable.white_key)
+        R.id.key_d5 -> getDrawable(R.drawable.white_key)
 
         // Teclas negras (11 - else)
         else -> getDrawable(R.drawable.black_key)
@@ -115,17 +112,14 @@ class MainActivity : AppCompatActivity() {
         R.id.key_f3,
         R.id.key_g3,
         R.id.key_a3,
-        R.id.key_b3,
         R.id.key_c4,
         R.id.key_d4,
         R.id.key_e4,
-        R.id.key_f4,
         R.id.key_g4,
         R.id.key_a4,
         R.id.key_b4,
         R.id.key_c5,
-        R.id.key_d5,
-        R.id.key_e5 -> getDrawable(R.drawable.white_key_pressed)
+        R.id.key_d5 -> getDrawable(R.drawable.white_key_pressed)
 
         // Teclas negras (11 - else)
         else -> getDrawable(R.drawable.black_key_pressed)
