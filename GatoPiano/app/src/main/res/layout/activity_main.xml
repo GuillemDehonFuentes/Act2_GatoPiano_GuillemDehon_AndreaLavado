@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:layout_height="match_parent">
 
     <!-- Imagen del gato de fondo -->
     <ImageView
@@ -14,31 +14,31 @@
         android:src="@drawable/piano_gato"
         android:adjustViewBounds="true"
         android:elevation="8dp"
-        android:scaleType="fitXY"/>
+        android:scaleType="fitXY"
+        tools:ignore="ContentDescription" />
 
     <!-- ConstraintLayout que va encima del gato -->
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="1379dp"
+        android:layout_width="740dp"
         android:layout_height="match_parent">
 
-        <!-- HorizontalScrollView limitado a la zona de la boca -->
-        <HorizontalScrollView
-            android:id="@+id/horizontalScroll"
-            android:layout_width="1150dp"
-            android:layout_height="358dp"
-            android:layout_marginStart="110dp"
-            android:layout_marginTop="330dp"
+        <!-- LinearLayout horizontal limitado a la zona de la boca -->
+        <LinearLayout
+            android:id="@+id/horizontalLayout"
+            android:layout_width="620dp"
+            android:layout_height="400dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="200dp"
+            android:orientation="horizontal"
             android:clipChildren="false"
             android:clipToPadding="false"
-            android:fillViewport="true"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.0">
 
-
             <RelativeLayout
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent">
 
                 <!-- Teclas Blancas (LinearLayout horizontal) -->
@@ -49,196 +49,198 @@
                     android:orientation="horizontal">
 
                     <!-- Octava 3 -->
-
                     <View
                         android:id="@+id/key_a3"
-                        android:layout_width="82dp"
+                        android:layout_width="44dp"
                         android:layout_height="match_parent"
                         android:background="@drawable/white_key"
                         android:tag="miau_a_1" />
 
                     <View
                         android:id="@+id/key_c3"
-                        android:layout_width="82dp"
+                        android:layout_width="44dp"
                         android:layout_height="match_parent"
                         android:background="@drawable/white_key"
                         android:tag="miau_c_1" />
 
                     <View
                         android:id="@+id/key_d3"
-                        android:layout_width="82dp"
+                        android:layout_width="44dp"
                         android:layout_height="match_parent"
                         android:background="@drawable/white_key"
                         android:tag="miau_d_1" />
 
                     <View
                         android:id="@+id/key_e3"
-                        android:layout_width="82dp"
+                        android:layout_width="44dp"
                         android:layout_height="match_parent"
                         android:background="@drawable/white_key"
                         android:tag="miau_e_1" />
 
                     <View
                         android:id="@+id/key_f3"
-                        android:layout_width="82dp"
+                        android:layout_width="44dp"
                         android:layout_height="match_parent"
                         android:background="@drawable/white_key"
                         android:tag="miau_f_1" />
 
                     <View
                         android:id="@+id/key_g3"
-                        android:layout_width="82dp"
+                        android:layout_width="44dp"
                         android:layout_height="match_parent"
                         android:background="@drawable/white_key"
                         android:tag="miau_g_1" />
 
                     <View
                         android:id="@+id/key_c4"
-                        android:layout_width="82dp"
+                        android:layout_width="44dp"
                         android:layout_height="match_parent"
                         android:background="@drawable/white_key"
                         android:tag="miau_c_2" />
 
                     <View
                         android:id="@+id/key_d4"
-                        android:layout_width="82dp"
+                        android:layout_width="44dp"
                         android:layout_height="match_parent"
                         android:background="@drawable/white_key"
                         android:tag="miau_d_2" />
 
                     <View
                         android:id="@+id/key_e4"
-                        android:layout_width="82dp"
+                        android:layout_width="44dp"
                         android:layout_height="match_parent"
                         android:background="@drawable/white_key"
                         android:tag="miau_e_2" />
 
                     <View
                         android:id="@+id/key_g4"
-                        android:layout_width="82dp"
+                        android:layout_width="44dp"
                         android:layout_height="match_parent"
                         android:background="@drawable/white_key"
                         android:tag="miau_g_2" />
 
                     <View
                         android:id="@+id/key_a4"
-                        android:layout_width="82dp"
+                        android:layout_width="44dp"
                         android:layout_height="match_parent"
                         android:background="@drawable/white_key"
                         android:tag="miau_a_2" />
 
                     <View
                         android:id="@+id/key_b4"
-                        android:layout_width="82dp"
+                        android:layout_width="44dp"
                         android:layout_height="match_parent"
                         android:background="@drawable/white_key"
                         android:tag="miau_b_2" />
 
                     <View
                         android:id="@+id/key_c5"
-                        android:layout_width="82dp"
+                        android:layout_width="44dp"
                         android:layout_height="match_parent"
                         android:background="@drawable/white_key"
                         android:tag="miau_c_3" />
 
                     <View
                         android:id="@+id/key_d5"
-                        android:layout_width="82dp"
+                        android:layout_width="44dp"
                         android:layout_height="match_parent"
                         android:background="@drawable/white_key"
                         android:tag="miau_d_3" />
+
                 </LinearLayout>
 
                 <!-- Teclas Negras (RelativeLayout para posicionamiento absoluto) -->
                 <RelativeLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="250dp"
+                    android:layout_height="150dp"
                     android:layout_alignTop="@id/white_keys">
 
                     <!-- Octava 3 -->
                     <View
                         android:id="@+id/key_c_sharp3"
-                        android:layout_width="50dp"
+                        android:layout_width="30dp"
                         android:layout_height="match_parent"
-                        android:layout_marginStart="56dp"
+                        android:layout_marginStart="32dp"
                         android:background="@drawable/black_key"
                         android:tag="miau_c_sharp_1" />
 
                     <View
                         android:id="@+id/key_d_sharp3"
-                        android:layout_width="50dp"
+                        android:layout_width="30dp"
                         android:layout_height="match_parent"
-                        android:layout_marginStart="140dp"
+                        android:layout_marginStart="70dp"
                         android:background="@drawable/black_key"
                         android:tag="miau_d_sharp_1" />
 
                     <View
                         android:id="@+id/key_f_sharp3"
-                        android:layout_width="50dp"
+                        android:layout_width="30dp"
                         android:layout_height="match_parent"
-                        android:layout_marginStart="300dp"
+                        android:layout_marginStart="163dp"
                         android:background="@drawable/black_key"
                         android:tag="miau_f_sharp_1" />
 
                     <View
                         android:id="@+id/key_g_sharp3"
-                        android:layout_width="50dp"
+                        android:layout_width="30dp"
                         android:layout_height="match_parent"
-                        android:layout_marginStart="383dp"
+                        android:layout_marginStart="210dp"
                         android:background="@drawable/black_key"
                         android:tag="miau_g_sharp_1" />
 
                     <View
                         android:id="@+id/key_a_sharp3"
-                        android:layout_width="50dp"
+                        android:layout_width="30dp"
                         android:layout_height="match_parent"
-                        android:layout_marginStart="465dp"
+                        android:layout_marginStart="250dp"
                         android:background="@drawable/black_key"
                         android:tag="miau_a_sharp_1" />
 
                     <!-- Octava 4 -->
                     <View
                         android:id="@+id/key_c_sharp4"
-                        android:layout_width="50dp"
+                        android:layout_width="30dp"
                         android:layout_height="match_parent"
-                        android:layout_marginStart="630dp"
+                        android:layout_marginStart="335dp"
                         android:background="@drawable/black_key"
                         android:tag="miau_c_sharp_2" />
 
                     <View
                         android:id="@+id/key_d_sharp4"
-                        android:layout_width="50dp"
+                        android:layout_width="30dp"
                         android:layout_height="match_parent"
-                        android:layout_marginStart="713dp"
+                        android:layout_marginStart="385dp"
                         android:background="@drawable/black_key"
                         android:tag="miau_d_sharp_2" />
 
                     <View
                         android:id="@+id/key_f_sharp4"
-                        android:layout_width="50dp"
+                        android:layout_width="30dp"
                         android:layout_height="match_parent"
-                        android:layout_marginStart="875dp"
+                        android:layout_marginStart="470dp"
                         android:background="@drawable/black_key"
                         android:tag="miau_f_sharp_2" />
 
                     <View
                         android:id="@+id/key_g_sharp4"
-                        android:layout_width="50dp"
+                        android:layout_width="30dp"
                         android:layout_height="match_parent"
-                        android:layout_marginStart="960dp"
+                        android:layout_marginStart="515dp"
                         android:background="@drawable/black_key"
                         android:tag="miau_g_sharp_2" />
 
                     <View
                         android:id="@+id/key_a_sharp4"
-                        android:layout_width="50dp"
+                        android:layout_width="30dp"
                         android:layout_height="match_parent"
-                        android:layout_marginStart="1037dp"
+                        android:layout_marginStart="560dp"
                         android:background="@drawable/black_key"
                         android:tag="miau_a_sharp_2" />
+
                 </RelativeLayout>
 
             </RelativeLayout>
-        </HorizontalScrollView>
+        </LinearLayout>
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>
