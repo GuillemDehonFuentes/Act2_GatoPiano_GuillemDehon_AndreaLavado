@@ -60,7 +60,7 @@ class MainActivity : AppCompatActivity() {
             R.id.key_c4, R.id.key_c_sharp4, R.id.key_d4, R.id.key_d_sharp4,
             R.id.key_e4, R.id.key_f4, R.id.key_f_sharp4, R.id.key_g4,
             R.id.key_g_sharp4, R.id.key_a4, R.id.key_a_sharp4, R.id.key_b4,
-            R.id.key_c5, R.id.key_d5, R.id.key_e5, R.id.key_c_sharp5
+            R.id.key_c5, R.id.key_d5, R.id.key_e5
         )
 
         allKeys.forEach { id ->
