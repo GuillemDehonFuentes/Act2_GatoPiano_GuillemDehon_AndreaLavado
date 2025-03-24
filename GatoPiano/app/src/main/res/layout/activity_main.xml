@@ -17,230 +17,335 @@
         android:scaleType="fitXY"
         tools:ignore="ContentDescription" />
 
-    <!-- ConstraintLayout que va encima del gato -->
+    <!-- Layout principal adaptable -->
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="740dp"
+        android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <!-- LinearLayout horizontal limitado a la zona de la boca -->
+        <!-- Guías verticales para delimitar el área (por ejemplo, 8% y 90% del ancho) -->
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.08" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.90" />
+
+        <!-- Guías horizontales para delimitar la "boca" (ajusta porcentajes según tu imagen) -->
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.50" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.96" />
+
+        <!-- Contenedor para las teclas (blancas y negras) delimitado por las guías -->
         <LinearLayout
             android:id="@+id/horizontalLayout"
-            android:layout_width="620dp"
-            android:layout_height="400dp"
-            android:layout_marginStart="50dp"
-            android:layout_marginTop="200dp"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
             android:orientation="horizontal"
             android:clipChildren="false"
             android:clipToPadding="false"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0">
+            app:layout_constraintStart_toEndOf="@id/guideline_left"
+            app:layout_constraintEnd_toStartOf="@id/guideline_right"
+            app:layout_constraintTop_toTopOf="@id/guideline_top"
+            app:layout_constraintBottom_toBottomOf="@id/guideline_bottom">
 
+            <!-- Contenedor interno: RelativeLayout -->
             <RelativeLayout
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent">
 
-                <!-- Teclas Blancas (LinearLayout horizontal) -->
+                <!-- Teclas Blancas: LinearLayout con layout_weight -->
                 <LinearLayout
                     android:id="@+id/white_keys"
-                    android:layout_width="match_parent"
-                    android:layout_height="340dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
                     android:orientation="horizontal">
 
-                    <!-- Octava 3 -->
+                    <!-- 14 teclas blancas, cada una con width=0dp y weight=1 -->
                     <View
                         android:id="@+id/key_a3"
-                        android:layout_width="44dp"
+                        android:layout_width="0dp"
                         android:layout_height="match_parent"
+                        android:layout_weight="1"
                         android:background="@drawable/white_key"
                         android:tag="miau_a_1" />
 
                     <View
                         android:id="@+id/key_c3"
-                        android:layout_width="44dp"
+                        android:layout_width="0dp"
                         android:layout_height="match_parent"
+                        android:layout_weight="1"
                         android:background="@drawable/white_key"
                         android:tag="miau_c_1" />
 
                     <View
                         android:id="@+id/key_d3"
-                        android:layout_width="44dp"
+                        android:layout_width="0dp"
                         android:layout_height="match_parent"
+                        android:layout_weight="1"
                         android:background="@drawable/white_key"
                         android:tag="miau_d_1" />
 
                     <View
                         android:id="@+id/key_e3"
-                        android:layout_width="44dp"
+                        android:layout_width="0dp"
                         android:layout_height="match_parent"
+                        android:layout_weight="1"
                         android:background="@drawable/white_key"
                         android:tag="miau_e_1" />
 
                     <View
                         android:id="@+id/key_f3"
-                        android:layout_width="44dp"
+                        android:layout_width="0dp"
                         android:layout_height="match_parent"
+                        android:layout_weight="1"
                         android:background="@drawable/white_key"
                         android:tag="miau_f_1" />
 
                     <View
                         android:id="@+id/key_g3"
-                        android:layout_width="44dp"
+                        android:layout_width="0dp"
                         android:layout_height="match_parent"
+                        android:layout_weight="1"
                         android:background="@drawable/white_key"
                         android:tag="miau_g_1" />
 
                     <View
                         android:id="@+id/key_c4"
-                        android:layout_width="44dp"
+                        android:layout_width="0dp"
                         android:layout_height="match_parent"
+                        android:layout_weight="1"
                         android:background="@drawable/white_key"
                         android:tag="miau_c_2" />
 
                     <View
                         android:id="@+id/key_d4"
-                        android:layout_width="44dp"
+                        android:layout_width="0dp"
                         android:layout_height="match_parent"
+                        android:layout_weight="1"
                         android:background="@drawable/white_key"
                         android:tag="miau_d_2" />
 
                     <View
                         android:id="@+id/key_e4"
-                        android:layout_width="44dp"
+                        android:layout_width="0dp"
                         android:layout_height="match_parent"
+                        android:layout_weight="1"
                         android:background="@drawable/white_key"
                         android:tag="miau_e_2" />
 
                     <View
                         android:id="@+id/key_g4"
-                        android:layout_width="44dp"
+                        android:layout_width="0dp"
                         android:layout_height="match_parent"
+                        android:layout_weight="1"
                         android:background="@drawable/white_key"
                         android:tag="miau_g_2" />
 
                     <View
                         android:id="@+id/key_a4"
-                        android:layout_width="44dp"
+                        android:layout_width="0dp"
                         android:layout_height="match_parent"
+                        android:layout_weight="1"
                         android:background="@drawable/white_key"
                         android:tag="miau_a_2" />
 
                     <View
                         android:id="@+id/key_b4"
-                        android:layout_width="44dp"
+                        android:layout_width="0dp"
                         android:layout_height="match_parent"
+                        android:layout_weight="1"
                         android:background="@drawable/white_key"
                         android:tag="miau_b_2" />
 
                     <View
                         android:id="@+id/key_c5"
-                        android:layout_width="44dp"
+                        android:layout_width="0dp"
                         android:layout_height="match_parent"
+                        android:layout_weight="1"
                         android:background="@drawable/white_key"
                         android:tag="miau_c_3" />
 
                     <View
                         android:id="@+id/key_d5"
-                        android:layout_width="44dp"
+                        android:layout_width="0dp"
                         android:layout_height="match_parent"
+                        android:layout_weight="1"
                         android:background="@drawable/white_key"
                         android:tag="miau_d_3" />
 
                 </LinearLayout>
 
-                <!-- Teclas Negras (RelativeLayout para posicionamiento absoluto) -->
-                <RelativeLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="150dp"
+                <!-- Reemplazamos el RelativeLayout de negras por un ConstraintLayout
+                     para poder usar porcentajes y biases. -->
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/blackKeysLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:layout_alignTop="@id/white_keys">
 
-                    <!-- Octava 3 -->
+                    <!-- Teclas Negras con layout_constraintWidth_percent y layout_constraintHorizontal_bias -->
+                    <!-- Ajusta estos valores a tu gusto para centrar cada negra entre dos blancas. -->
+
+                    <!-- 1) key_c_sharp3 (ejemplo: bias ~ 0.14) -->
                     <View
                         android:id="@+id/key_c_sharp3"
-                        android:layout_width="30dp"
+                        android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_marginStart="32dp"
                         android:background="@drawable/black_key"
-                        android:tag="miau_c_sharp_1" />
+                        android:tag="miau_c_sharp_1"
+                        app:layout_constraintWidth_percent="0.03"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0.05" />
 
+                    <!-- 2) key_d_sharp3 (ejemplo: bias ~ 0.21) -->
                     <View
                         android:id="@+id/key_d_sharp3"
-                        android:layout_width="30dp"
+                        android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_marginStart="70dp"
                         android:background="@drawable/black_key"
-                        android:tag="miau_d_sharp_1" />
+                        android:tag="miau_d_sharp_1"
+                        app:layout_constraintWidth_percent="0.03"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0.13" />
 
+                    <!-- 3) key_f_sharp3 (ejemplo: bias ~ 0.36) -->
                     <View
                         android:id="@+id/key_f_sharp3"
-                        android:layout_width="30dp"
+                        android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_marginStart="163dp"
                         android:background="@drawable/black_key"
-                        android:tag="miau_f_sharp_1" />
+                        android:tag="miau_f_sharp_1"
+                        app:layout_constraintWidth_percent="0.03"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0.28" />
 
+                    <!-- 4) key_g_sharp3 (ejemplo: bias ~ 0.43) -->
                     <View
                         android:id="@+id/key_g_sharp3"
-                        android:layout_width="30dp"
+                        android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_marginStart="210dp"
                         android:background="@drawable/black_key"
-                        android:tag="miau_g_sharp_1" />
+                        android:tag="miau_g_sharp_1"
+                        app:layout_constraintWidth_percent="0.03"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0.35" />
 
+                    <!-- 5) key_a_sharp3 (ejemplo: bias ~ 0.57) -->
                     <View
                         android:id="@+id/key_a_sharp3"
-                        android:layout_width="30dp"
+                        android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_marginStart="250dp"
                         android:background="@drawable/black_key"
-                        android:tag="miau_a_sharp_1" />
+                        android:tag="miau_a_sharp_1"
+                        app:layout_constraintWidth_percent="0.03"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0.43" />
 
-                    <!-- Octava 4 -->
+                    <!-- 5) key_a_sharp3 (ejemplo: bias ~ 0.57) -->
                     <View
-                        android:id="@+id/key_c_sharp4"
-                        android:layout_width="30dp"
+                        android:id="@+id/key_a_sharp3"
+                        android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_marginStart="335dp"
                         android:background="@drawable/black_key"
-                        android:tag="miau_c_sharp_2" />
+                        android:tag="miau_a_sharp_1"
+                        app:layout_constraintWidth_percent="0.03"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0.57" />
 
+                    <!-- 5) key_a_sharp3 (ejemplo: bias ~ 0.57) -->
                     <View
-                        android:id="@+id/key_d_sharp4"
-                        android:layout_width="30dp"
+                        android:id="@+id/key_a_sharp3"
+                        android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_marginStart="385dp"
                         android:background="@drawable/black_key"
-                        android:tag="miau_d_sharp_2" />
+                        android:tag="miau_a_sharp_1"
+                        app:layout_constraintWidth_percent="0.03"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0.64" />
 
+                    <!-- 5) key_a_sharp3 (ejemplo: bias ~ 0.57) -->
                     <View
-                        android:id="@+id/key_f_sharp4"
-                        android:layout_width="30dp"
+                        android:id="@+id/key_a_sharp3"
+                        android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_marginStart="470dp"
                         android:background="@drawable/black_key"
-                        android:tag="miau_f_sharp_2" />
+                        android:tag="miau_a_sharp_1"
+                        app:layout_constraintWidth_percent="0.03"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0.80" />
 
+                    <!-- 5) key_a_sharp3 (ejemplo: bias ~ 0.57) -->
                     <View
-                        android:id="@+id/key_g_sharp4"
-                        android:layout_width="30dp"
+                        android:id="@+id/key_a_sharp3"
+                        android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_marginStart="515dp"
                         android:background="@drawable/black_key"
-                        android:tag="miau_g_sharp_2" />
+                        android:tag="miau_a_sharp_1"
+                        app:layout_constraintWidth_percent="0.03"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0.87" />
 
+                    <!-- 5) key_a_sharp3 (ejemplo: bias ~ 0.57) -->
                     <View
-                        android:id="@+id/key_a_sharp4"
-                        android:layout_width="30dp"
+                        android:id="@+id/key_a_sharp3"
+                        android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_marginStart="560dp"
                         android:background="@drawable/black_key"
-                        android:tag="miau_a_sharp_2" />
+                        android:tag="miau_a_sharp_1"
+                        app:layout_constraintWidth_percent="0.03"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0.94" />
 
-                </RelativeLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
 
             </RelativeLayout>
         </LinearLayout>
-
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>
