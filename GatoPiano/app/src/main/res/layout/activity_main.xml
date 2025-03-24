@@ -79,14 +79,6 @@
 
                     <!-- 14 teclas blancas, cada una con width=0dp y weight=1 -->
                     <View
-                        android:id="@+id/key_a3"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:background="@drawable/white_key"
-                        android:tag="miau_a_1" />
-
-                    <View
                         android:id="@+id/key_c3"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -125,6 +117,14 @@
                         android:layout_weight="1"
                         android:background="@drawable/white_key"
                         android:tag="miau_g_1" />
+
+                    <View
+                        android:id="@+id/key_a3"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/white_key"
+                        android:tag="miau_a_1" />
 
                     <View
                         android:id="@+id/key_c4"
@@ -275,11 +275,11 @@
 
                     <!-- 5) key_a_sharp3 (ejemplo: bias ~ 0.57) -->
                     <View
-                        android:id="@+id/key_a_sharp3"
+                        android:id="@+id/key_c_sharp4"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:background="@drawable/black_key"
-                        android:tag="miau_a_sharp_1"
+                        android:tag="miau_c_sharp_2"
                         app:layout_constraintWidth_percent="0.03"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -289,11 +289,11 @@
 
                     <!-- 5) key_a_sharp3 (ejemplo: bias ~ 0.57) -->
                     <View
-                        android:id="@+id/key_a_sharp3"
+                        android:id="@+id/key_d_sharp4"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:background="@drawable/black_key"
-                        android:tag="miau_a_sharp_1"
+                        android:tag="miau_d_sharp_2"
                         app:layout_constraintWidth_percent="0.03"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -303,11 +303,11 @@
 
                     <!-- 5) key_a_sharp3 (ejemplo: bias ~ 0.57) -->
                     <View
-                        android:id="@+id/key_a_sharp3"
+                        android:id="@+id/key_f_sharp4"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:background="@drawable/black_key"
-                        android:tag="miau_a_sharp_1"
+                        android:tag="miau_f_sharp_2"
                         app:layout_constraintWidth_percent="0.03"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -317,11 +317,11 @@
 
                     <!-- 5) key_a_sharp3 (ejemplo: bias ~ 0.57) -->
                     <View
-                        android:id="@+id/key_a_sharp3"
+                        android:id="@+id/key_g_sharp4"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:background="@drawable/black_key"
-                        android:tag="miau_a_sharp_1"
+                        android:tag="miau_a_sharp_2"
                         app:layout_constraintWidth_percent="0.03"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -331,11 +331,11 @@
 
                     <!-- 5) key_a_sharp3 (ejemplo: bias ~ 0.57) -->
                     <View
-                        android:id="@+id/key_a_sharp3"
+                        android:id="@+id/key_a_sharp4"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:background="@drawable/black_key"
-                        android:tag="miau_a_sharp_1"
+                        android:tag="miau_a_sharp_2"
                         app:layout_constraintWidth_percent="0.03"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
